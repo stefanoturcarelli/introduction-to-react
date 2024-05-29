@@ -1,0 +1,46 @@
+:root {
+  --app-systemGray6-default-dark: rgb(28, 28, 30);
+  --app-systemGray6-default-light: rgb(242, 242, 247);
+}
+
+body {
+  background-color: var(--app-systemGray6-default-dark);
+  color: var(--app-systemGray6-default-light);
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+main {
+  display: grid;
+  height: 100svh;
+  place-items: center;
+}
+
+span {
+  color: #00f3b6;
+}
+
+.input {
+  width: 280px;
+  height: 44px;
+  margin-top: 40px;
+  padding: 0 20px;
+  border: 1px solid rgb(255, 255, 255 / 5%);
+  background-color: #222122;
+  color: var(--app-systemGray6-default-light);
+  text-align: center;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  main {
+    text-align: center;
+  }
+}
